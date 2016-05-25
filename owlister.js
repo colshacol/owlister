@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
+// TODO: Add support for script options.
+
 // syncs are keywords that will indicate that the following
 // task will be ran in sync with the previous.
 let syncs = ['++', 'WHILE', 'while', 'AND', 'and', '&'];
