@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      {
+        "name": "owlister",
+        "raw": "owlister",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      ""
+    ]
+  ],
+  "_from": "owlister@latest",
+  "_id": "owlister@0.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/owlister",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/owlister-0.0.2.tgz_1464256351986_0.4424878016579896"
+  },
+  "_npmUser": {
+    "email": "colshacol@gmail.com",
+    "name": "colshacol"
+  },
+  "_npmVersion": "3.9.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "owlister",
+    "raw": "owlister",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/owlister/-/owlister-0.0.2.tgz",
+  "_shasum": "ce19de053d193089bdf023b97f1a7d9ac99c7cc2",
+  "_shrinkwrap": null,
+  "_spec": "owlister",
+  "_where": "",
+  "author": {
+    "name": "colshacol"
+  },
+  "bin": {
+    "owl": "owlister.js"
+  },
+  "dependencies": {},
+  "description": "A npm script based task runner / build tool.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "ce19de053d193089bdf023b97f1a7d9ac99c7cc2",
+    "tarball": "https://registry.npmjs.org/owlister/-/owlister-0.0.2.tgz"
+  },
+  "gitHead": "1338315cd61efa3ff852da625e3d01006a71ce32",
+  "license": "ISC",
+  "main": "owlister.js",
+  "maintainers": [
+    {
+      "email": "colshacol@gmail.com",
+      "name": "colshacol"
+    }
+  ],
+  "name": "owlister",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colshacol/owlister/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}
