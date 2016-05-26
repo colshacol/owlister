@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-// TODO: Change path formatting to 'path'.
+// TODO: Change path formatting to .path instead of [path]
 
 // syncs are keywords that will indicate that the following
 // task will be ran in sync with the previous.
