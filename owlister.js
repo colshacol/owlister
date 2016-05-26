@@ -105,6 +105,9 @@ FS.readFile('tasks.owl', 'utf8', (error, data) => {
 				return;
 
 			} // refers[] if/else
+		} else if(bit[0] == '-') {
+			command += ` ${bit}`;
+			
 		} else {
 			// console.log(`'${bit}' is not legal. Ignored.`);
 			return;
