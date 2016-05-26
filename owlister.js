@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 'use strict'
 
-// TODO: Add support for script options.
 // TODO: Change path formatting to 'path'.
 
 // syncs are keywords that will indicate that the following
@@ -52,7 +51,6 @@ FS.readFile('tasks.owl', 'utf8', (error, data) => {
 		return bits;
 	})(task, data); // close getTaskBits()
 	// console.log(taskBits);
-	// taskBits.forEach((bit) => console.log(bit));
 
 	// ..........................................................
 	// Translate array, bit by bit, into command to be processed.
@@ -107,7 +105,7 @@ FS.readFile('tasks.owl', 'utf8', (error, data) => {
 			} // refers[] if/else
 		} else if(bit[0] == '-') {
 			command += ` ${bit}`;
-			
+
 		} else {
 			// console.log(`'${bit}' is not legal. Ignored.`);
 			return;
