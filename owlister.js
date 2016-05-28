@@ -103,7 +103,7 @@ FS.readFile('tasks.owl', 'utf8', (error, data) => {
 				return;
 
 			} // refers[] if/else
-		} else if(bit[0] == '-') {
+		} else if(bit[0] == '-' || bit[0] == '"' || bit[0] == "'") {
 			command += ` ${bit}`;
 
 		} else {
