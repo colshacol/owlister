@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict'
+
 const fs = require('fs'); // file system
 const task = process.argv[2]; // task name
 const os = process.platform; // operating system
@@ -24,3 +27,12 @@ fs.readFile('tasks.owl', 'utf8', (err, data) => {
 
 
 }) // FS.readFile()
+
+// const exec = require('child_process').exec;
+// const child = exec(command, (error, stdout, stderr) => {
+// 	console.log(`stdout: ${stdout}`);
+// 	console.log(`stderr: ${stderr}`);
+// 	if (error !== null) {
+// 		console.log(`execution error: ${error}`);
+// 	}
+// }); // exec()

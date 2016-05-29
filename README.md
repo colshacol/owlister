@@ -1,4 +1,3 @@
-
 # (( '^' )) Owlister v.0.0.3
 
 ## Owlister provides a prettier way to manage npm scripts.

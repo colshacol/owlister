@@ -1,6 +1,5 @@
 /*
 
-
 vars ((
   sassSrc = ./src/styles/*.sass
   sassDest = ./dist/styles/
