@@ -1,0 +1,30 @@
+{
+  "name": "owlister",
+  "version": "0.0.3",
+  "description": "The sugar on top of your npm scripts.",
+  "main": "owlister.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colshacol/owlister.git"
+  },
+  "keywords": [
+    "build",
+    "tool",
+    "task",
+    "runner",
+    "npm",
+    "scripts"
+  ],
+  "author": "Shane Colcleasure | @colshacol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colshacol/owlister/issues"
+  },
+  "homepage": "https://github.com/colshacol/owlister#readme"
+}
