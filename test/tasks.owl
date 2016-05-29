@@ -1,0 +1,34 @@
+/*
+
+vars ((
+  sassSrc = ./src/styles/*.sass
+  sassDest = ./dist/styles/
+  pugSrc = ./src/views/*.pug
+  pugDest = ./dist/views/
+  aPath = ./assets/scripts/main.js
+  bPath = ./dist/main.js
+))
+
+scripts ((
+
+  build:js = browserify (aPath) > (bPath)
+  watch-js = watch '(^) (build:js)' assets/scripts
+  watch:js = watch '(^) (build:js)' assets/scripts
+  build:css = stylus (stylSrc) > dist/main.css
+  watch:css = watch '(^) (build:css)' assets/styles/
+  build:html = jade index.jade > dist/index.html
+  watch:html = watch '(^) build:html' assets/html
+
+  build =
+    (^) (build:js)
+    && (^) (build:css)
+    && (^) (build:html)
+
+  build:watch =
+    parallelshell
+      '(^) watch:js'
+      '(^) watch:css'
+      '(^) watch:html'
+))
+
+*/

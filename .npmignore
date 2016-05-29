@@ -1,5 +1,3 @@
-tasks.owl
-owlFns.js
-all.css
-.gitignore
-.git
+./node_modules/
+./ss/
+./.git/
