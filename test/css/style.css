@@ -1,0 +1,9 @@
+body {
+  color: #f00;
+}
+body div {
+  background: #00f;
+}
+body div h1 {
+  color: #ff0;
+}

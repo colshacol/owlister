@@ -9,6 +9,9 @@
   "scripts": {
     "test": "none"
   },
+  "bin": {
+    "owl": "owlister.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/colshacol/owlister.git"
@@ -26,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/colshacol/owlister/issues"
   },
-  "homepage": "https://github.com/colshacol/owlister#readme"
+  "homepage": "https://github.com/colshacol/owlister#readme",
+  "dependencies": {
+    "concurrently": "^2.1.0"
+  }
 }
