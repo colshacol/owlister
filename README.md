@@ -1,5 +1,7 @@
 # (( '^' )) Owlister v.1.0.0
 
+`npm install -g owlister`
+
 ## Owlister provides a prettier way to manage terminal commands and npm scripts.
 Although the following code examples may look unrelated, they are astonishingly similar and only separated in formatting and a few functional features.
 
