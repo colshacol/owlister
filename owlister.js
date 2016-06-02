@@ -11,8 +11,8 @@
 // the specified cli tool.
 
 const fs = require('fs'); // file system
-const task = process.argv[2]; // task name
-const os = process.platform; // operating system
+// const os = process.platform; // operating system
+
 
 // read tasks.owl, return error msg or data string
 fs.readFile('tasks.owl', 'utf8', (err, data) => {
@@ -61,6 +61,7 @@ fs.readFile('tasks.owl', 'utf8', (err, data) => {
     return obj;
   })();
 
+  const task = process.argv[2]; // task name
   let thisTask = scriptsObject[task];
 
   let whileCount = 0
@@ -84,6 +85,6 @@ fs.readFile('tasks.owl', 'utf8', (err, data) => {
   	console.log(`stderr: ${stderr}`);
   	if (error !== null) {
   		console.log(`execution error: ${error}`);
-  	}
+  	};
   }); // exec()
-}) // FS.readFile()
+}); // FS.readFile()
