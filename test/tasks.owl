@@ -1,34 +1,44 @@
 /*
 
 vars ((
-  sassSrc = ./src/styles/*.sass
-  sassDest = ./dist/styles/
-  pugSrc = ./src/views/*.pug
-  pugDest = ./dist/views/
-  aPath = ./assets/scripts/main.js
-  bPath = ./dist/main.js
+  sassSrc = ./src/styles/*.sass;
+  sassDest = ./dist/styles/;
+  pugSrc = ./src/views/*.pug;
+  pugDest = ./dist/views/;
+  aPath = ./assets/scripts/main.js;
+  bPath = ./dist/main.js;
+  stylSrc = ./path/to/*.styl;
+  stylIn = ./styl;
+  stylOut = ./css/;
 ))
 
 scripts ((
 
-  build:js = browserify (aPath) > (bPath)
-  watch-js = watch '(^) (build:js)' assets/scripts
-  watch:js = watch '(^) (build:js)' assets/scripts
-  build:css = stylus (stylSrc) > dist/main.css
-  watch:css = watch '(^) (build:css)' assets/styles/
-  build:html = jade index.jade > dist/index.html
-  watch:html = watch '(^) build:html' assets/html
+  buildJs = browserify (aPath) > (bPath);
+  watchJs = watch '(^) (buildJs)' assets/scripts;
+  buildCss = stylus (stylSrc) > dist/main.css;
+  watchCss = watch '(^) (buildCss)' assets/styles/;
+  buildHtml = jade index.jade > dist/index.html;
+  watchHtml = watch '(^) (buildHtml)' (buildJs);
 
   build =
-    (^) (build:js)
-    && (^) (build:css)
-    && (^) (build:html)
+    (^) (buildJs)
+    && (^) (buildCss)
+    && (^) (buildHtml);
 
-  build:watch =
+  buildWatch =
     parallelshell
-      '(^) watch:js'
-      '(^) watch:css'
-      '(^) watch:html'
+      '(^) (watchJs)'
+      '(^) (watchCss)'
+      '(^) (watchHtml)';
+
+
+  ls = live-server;
+  watchStyl = stylus --watch (stylIn) --out (stylOut);
+  serveStylus = parallelshell '(watchStyl)' '(ls)';
+
+  nodeSass = node-sass ./sass/ -o ./css/
+
 ))
 
 */

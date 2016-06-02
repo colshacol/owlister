@@ -9,6 +9,9 @@
   "scripts": {
     "test": "none"
   },
+  "bin": {
+    "owl": "owlister.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/colshacol/owlister.git"
@@ -28,6 +31,6 @@
   },
   "homepage": "https://github.com/colshacol/owlister#readme",
   "dependencies": {
-    "parallelshell": "^2.0.0"
+    "concurrently": "^2.1.0"
   }
 }
