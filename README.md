@@ -1,6 +1,6 @@
 # (( '^' )) Owlister v.1.0.0
 
-`npm install -g owlister`
+`$ npm install -g owlister` _Instructions for use at bottom of readme._
 
 ## Owlister provides a prettier way to manage terminal commands and npm scripts.
 Although the following code examples may look unrelated, they are astonishingly similar and only separated in formatting and a few functional features.
@@ -75,6 +75,14 @@ I am not a big fan of keystrokes. They're noisy and require effort. The Owl Toke
 
 # Not only npm scripts...
 Owlister only runs the scripts that you write. `npm run` is not implicit. Therefore; if you choose not to use `npm run` or the `(^)` owl token, you can simply write and store terminal commands that have nothing to do with npm.
+
+# How to use Owlister
+
+1. `$ npm install -g owlister`
+2. Create a tasks.owl file in your root directory.
+3. Create your task blocks in your tasks.owl file.
+4. `$ owl taskName`
+
 
 ---
 #### TODO
