@@ -1,44 +1,48 @@
-/*
-
-vars ((
-  sassSrc = ./src/styles/*.sass;
-  sassDest = ./dist/styles/;
-  pugSrc = ./src/views/*.pug;
-  pugDest = ./dist/views/;
-  aPath = ./assets/scripts/main.js;
-  bPath = ./dist/main.js;
-  stylSrc = ./path/to/*.styl;
-  stylIn = ./styl;
-  stylOut = ./css/;
-))
-
-scripts ((
-
-  buildJs = browserify (aPath) > (bPath);
-  watchJs = watch '(^) (buildJs)' assets/scripts;
-  buildCss = stylus (stylSrc) > dist/main.css;
-  watchCss = watch '(^) (buildCss)' assets/styles/;
-  buildHtml = jade index.jade > dist/index.html;
-  watchHtml = watch '(^) (buildHtml)' (buildJs);
-
-  build =
-    (^) (buildJs)
-    && (^) (buildCss)
-    && (^) (buildHtml);
-
-  buildWatch =
-    parallelshell
-      '(^) (watchJs)'
-      '(^) (watchCss)'
-      '(^) (watchHtml)';
+var stylus-in = ./styl;
+var stylus-out = ./css;
+var pug-in = ./index.pug;
+var pug-out = ./index.html;
+var babel-in = ./babel;
+var babel-out = ./js;
 
 
-  ls = live-server;
-  watchStyl = stylus --watch (stylIn) --out (stylOut);
-  serveStylus = parallelshell '(watchStyl)' '(ls)';
+var watch-stylus = stylus -w (stylus-in) -o (stylus-out);
+var live-server:stylus-watch => '(watch-stylus)' 'live-server';
+var watch-pug = pug -w (pug-in) > (pug-out);
+var watch-babel = babel (babel-in) -w --out-dir (babel-out);
 
-  nodeSass = node-sass ./sass/ -o ./css/
+var build => '(watch-stylus)'
+             '(watch-pug)'
+             '(watch-babel)'
+             'live-server';
+         
+         
 
-))
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
