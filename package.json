@@ -1,7 +1,7 @@
 {
   "name": "owlister",
-  "version": "1.1.1",
-  "description": "The sugar on top of your npm scripts.",
+  "version": "1.2.0",
+  "description": "Maintainable terminal commands.",
   "main": "owlister.js",
   "directories": {
     "test": "test"
